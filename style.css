@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "M_R";
+    src: url("fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face{
+    font-family: "M_B";
+    src: url("fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face{
+    font-family: "R_LI";
+    src: url("fonts/Roboto-LightItalic.woff") format("woff");
+}
+
+@font-face{
+    font-family: "R_R";
+    src: url("fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face{
+    font-family: "KS_R";
+    src: url("fonts/KaushanScript-Regular.woff") format("woff");
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    
+    font-family: "R_R";
+    font-size: 14px;
+}
