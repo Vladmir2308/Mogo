@@ -39,7 +39,61 @@ html{
 
 body{
     margin: 0;
-    
+
     font-family: "R_R";
     font-size: 14px;
+    color: #000;
 }
+
+/* Intro */
+.intro{
+    color: #fff;
+
+    background: url(img/intro_bg.jpg) center no-repeat;
+    background-size: cover;
+
+    height: 1000px;
+}
+
+.header{
+    width: 100%;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1200px;
+
+    padding: 25px 15px;
+    margin: 0 auto;
+}
+
+.header__logo{
+    font-size: 2rem;
+    font-family: "M_B";
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+    margin-right: 50px;
+}
+
+/* Media */
+
+
+
+
+
+
+
+
+
