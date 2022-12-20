@@ -46,6 +46,18 @@ body{
     color: #000;
 }
 
+hr{
+    display: block;
+    
+    width: 100%;
+    height: 1px;
+    
+    background-color: #e5e5e5;
+    border: 0;
+    
+    margin: 45px 0;
+}
+
 /* Header */
 .header{
     position: absolute;
@@ -245,12 +257,6 @@ body{
     height: auto;
 }
 
-.title__block{
-    margin-top: 110px;
-    
-    text-align: center;
-}
-
 .about__inner{
     display: flex;
     justify-content: space-between;
@@ -379,6 +385,86 @@ body{
     margin-top: 8px;
 }
 
+/* Services*/
+.services{
+    height: auto;
+    padding-bottom: 110px;
+}
+
+.services__inner{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 60px;
+    
+    position: relative;
+}
+
+.services__item{
+    display: flex;
+    width: 33.33333%;
+    
+    padding: 0 30px;
+}
+
+.services__icon{
+    width: 32px;
+    height: 31px;
+}
+
+.services__content{  
+    margin-left: 25px;
+    
+    min-width: 
+}
+
+.services__title{
+    font-family: "M_R";
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1;
+    
+    margin-bottom: 10px;
+}
+
+.services__text{
+    font-size: 1rem;
+
+    color: #999999;
+}
+
+/* Design */
+.design{
+    position: relative;
+    
+    width: 100%;
+    height: 850px;
+    
+    background: url(img/design_bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.design__container{
+    position: relative;
+    
+    width: 100%;
+    max-width: 600px;
+    
+    margin: 9px auto 0;
+}
+
+.design_ipad{
+    display: block;
+    
+}
+
+.design_phone{
+    position: absolute;
+    bottom: -90px;
+    right: -80px;
+}
+
 
 
 
@@ -388,6 +474,12 @@ body{
 
 
 /* Titles */
+.title__block{
+    padding-top: 110px;
+    
+    text-align: center;
+}
+
 .title{
     font-size: 1.7em;
     font-family: "KS_R";
@@ -410,7 +502,7 @@ body{
     
     background-color: #f38181;
     
-    margin: 40px auto;
+    margin: 40px auto 0;
 }
 
 /* Text */
@@ -423,7 +515,7 @@ body{
     
     text-align: center;
     
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 /* Btn */
@@ -446,7 +538,8 @@ body{
 }
 
 /* Media */
-@media (max-width: 1250px){
+@media (max-width: 965px){
+
 }
 
 
