@@ -276,6 +276,7 @@ hr{
 }
 
 .about__item__bg{
+    width: 370px;
     background-color: #95e1d3;
 }
 
@@ -709,15 +710,27 @@ hr{
 .logos{
     background-color: #f8f8f8;
     
-    padding: 55px 0;
+    height: auto;
+    
+    padding: 25px 0;
 }
 
 .logos__inner{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
-    padding: 0 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logos__icon{
+    width: 12.5%;
+    padding: 15px;
+}
+
+.logos__img{   
+    width: 121px;
+    margin: 0 auto;
+    display: block;
 }
 
 
@@ -879,13 +892,21 @@ hr{
     padding: 0 0 0 15px;
 }
 
-.blog__card{
+.block__photo{
     position: relative;
+    
+    height: 240px;
+    width: 380px;
+    
+    margin: 0 auto;
 }
 
 .blog__photo{
+    display: block;
+    
     height: 240px;
-    width: 100%;
+    width: 380px;
+    margin: 0 auto;
 }
 
 .blog__card__info{
@@ -1009,6 +1030,7 @@ hr{
 .footer__inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
     position: relative;
 }
@@ -1180,6 +1202,7 @@ hr{
 .footer__photos{
     display: flex;
     flex-wrap: wrap;
+    width: 270.016px;
     
     margin-bottom: 10px;
 }
@@ -1413,14 +1436,449 @@ hr{
 }
 
 /* Media */
-@media (max-width: 1400px){  
+@media (max-width: 1210px){
+/*    Title */
+    .title__block{
+        padding-top: 70px;
+    }
+    
+/*    Design */
+    .design__container{
+        bottom: -40px;
+    }
+    
+/*    What we do */
+    .whatwedo{
+        padding-bottom: 70px;
+    }
+    
+    .whatwedo__content{
+        justify-content: space-around;
+        
+        margin-top: 40px;
+    }
+    
+    .whatwedo__photo{
+         width: 100%;
+    }
+    
+    .whatwedo__img{
+        margin: 0 auto 30px;
+    }
+    
+/*    Team */
+    .team{
+        padding-bottom: 70px;
+    }
+    
+    .team__inner{
+        margin-top: 50px;
+    }
+    
+/*    Clients */
+    .clients{
+        padding-bottom: 0;
+    }
+    
+/*    Blog */
+    .blog{
+        padding-bottom: 70px;
+    }
+    
+    .blog__inner{
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .blog__item{
+        width: 50%;
+    }
+    
+    .blog__item:last-child{
+        margin-top: 30px;
+    }
+    
+    .blog__info{
+        justify-content: center;
+    }
+    
+/*    Footer*/
+    .footer__inner{
+        justify-content: space-around;
+        text-align: center;
+    
+    }
+    
+    .footer__inner::after{
+        bottom: -25px;
+    }
+    
+    .footer__col__mogo{
+        width: 50%;
+        padding: 0 20px 20px;
+    }
+    
+    .footer__follow{
+        justify-content: center;
+    }
+    
+    .footer__form{
+        justify-content: center;
+    }
+    
+    .footer__col__blog{
+        width: 50%;
+        padding: 0 20px 20px;
+    }
+    
+    .footer__col__inst{
+        margin-top: 30px;
+        
+        width: auto;
+    }
+    
+/*    Copyright */
+    .copyright{
+        padding: 50px 0 25px;
+    }
+} /* media 1210px */
 
+@media (max-width: 1210px){
+    .logos__icon{
+        width: 33.33333%;
+    }
+} /* media 1100px */
+
+@media (max-width: 1168px){
+/*    About */
+    .about{
+        padding-bottom: 70px;
+    }
+    
+    .about__inner{
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .about__item:last-child{
+        padding: 30px 0 0 0;
+    }
+    
+/*    Team */
+    .team__inner{
+        justify-content: space-around;
+    }
+    
+    .team__item{
+        width: 50%;
+    }
+    
+    .team__item:last-child{
+        margin-top: 25px;
+        
+    }
 }
 
+@media (max-width: 960px){  
+/*    Intro */
+    .intro{
+        font-size: 12px;
+    }
 
+/*    Statistic */
+    .statistic__inner{
+        font-size: 12px;
+    }
+    
+    .statistic__item{
+        padding: 50px 30px;
+    }
+    
+    .statistic__item:first-child, .statistic__item:last-child{
+        border: 0;
+    }
+    
+/*    Services */
+    .services__inner{
+        justify-content: space-around;
+    }
+    
+    .services__item{
+        width: 50%;
+    }
+    
+    .whatwedo__inner{
+        width: 85%;
+    }
+    
+    .services__item:nth-child(3), .services__item:last-child{
+        margin-top: 30px;
+    }
+    
+/*    Quote */
+    .quote__inner{
+        font-size: 12px;
+    }
+    
+/*    Galery */
+    .galery__col{
+        width: 50%;
+    }
+} /* media 960px */
 
+@media (max-width: 810px){
+/*    About */
+    .about__item{
+        padding: 15px;
+    }
+    
+    .about__item:last-child{
+        padding: 15px;
+    }
+    
+/*    Statistic */
+    .statistic__item {
+        padding: 30px 30px 25px;
+    }
+    
+    .statistic__number{
+        font-size: 3.5em;
+    }
+    
+    .statistic__text {
+        font-size: 0.9em;
+    }
+    
+/*    Quote */
+    .quote__inner{
+        font-size: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        padding: 0;
+    }
+    
+    .quote__icon{
+        margin-bottom: 15px;
+    }
+    
+    .quote__img{
+        margin-bottom: 15px;
+    }
+    
+    .quote--bg__white{
+        padding: 50px 0;
+    }
+    
+    .quote__icon {
+        padding: 30px 30px 25px;
+    }
+    
+/*    Clients */
+    .client__item{
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .client__prof::after{
+        margin: 15px auto;
+    }
+    
+/*    Logos */
+    .logos__img{
+    }
+    
+/*    Blog */
+    .blog__item{
+        width: 100%;
+        
+        margin-top: 30px;
+    }
+    
+    .blog__item:first-child{
+        margin-top: 0;
+    }
+    
+/*    Footer */
+    .footer__col__mogo{
+        width: 100%;
+        
+        margin-bottom: 30px;
+    }
+    
+    .footer__col__inst{
+        margin-top: 0;
+    }
+} /* media 810px */
 
+@media (max-width: 760px){
+/*    Nav */
+    .nav{
+        display: none;
+    }
+    
+    .intro{
+        font-size: 10px;
+    }
+    
+/*    Statistic */
+    .statistic__item{
+        font-size: 10px;
+        
+        padding: 30px 30px 15px;
+    }
+    
+/*    Design */
+    .design_phone{
+        display: none;
+    }
+    
+/*    Footer */
+    .footer__col__blog{
+        width: 100%; 
+    }
+    
+    .blogs__item{
+        justify-content: center;
+    }
+} /* media 760px */
 
+@media (max-width: 640px){
+/*    Intro */
+    .intro__title{
+        font-size: 4em;
+    }
+    
+    .intro__subtitle{
+        font-size: 9em;
+    }
+    
+/*    Services */
+    .services__item{
+        width: 100%;
+        
+        margin-top: 20px;
+        
+        text-align: center;
+        
+        justify-content: center;
+    }
+    
+/*    Design */
+    .design{
+        height: 665px;
+    }
+    
+    .design__container{
+        width: 400px;
+    }
+    
+    .design_ipad{
+        width: 400px;
+    }
+    
+/*    What we do */
+    .whatwedo__img{
+        width: 375px;
+    }
+    
+/*    Quote */
+    .quote__icon{
+        padding: 30px 30px 0;
+    }
+    
+/*    Team */
+    .team__item{
+        width: 100%;
+        
+        margin-top: 25px;
+    }
+    
+    .team__item:first-child{
+        margin-top: 0; 
+    }
+    
+/*    Galery */
+    .galery__col{
+        width: 100%;
+    }
+    
+} /* media 760px */
 
+@media (max-width: 560px){
+/*    Intro */
+    .intro__title {
+        font-size: 3em;
+    }
+    
+    .intro__subtitle{
+        font-size: 8em;
+    }
+}
 
+@media (max-width: 520px){
+    .statistic__item{
+        padding: 30px 0 15px;
+    }
+    
+    .statistic__text {
+        font-size: 0.6em;
+    }
+    
+    .statistic__number{
+        font-size: 2.4;
+    }
+    
+    .intro__title{
+        font-size: 2em;
+    }
+    
+    .intro__subtitle {
+        font-size: 6em;
+    }
+    
+    .slider__item{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 450px){
+    .block__photo{
+        width: 320px;
+    }
+    
+    .blog__photo{
+        width: 320px;
+    }
+    
+    .whatwedo__img{
+        width: 320px;
+    }
+    
+    .design_ipad {
+        width: 320px;
+    }
+    
+    .design__container{
+        width: 316px;
+    }
+    
+    .design{
+        height: 578px;
+    }
+    
+    .about__photo{
+        width: 320px;
+    }
+    
+    .about__item__bg{
+        width: 320px;
+    }
+    
+    .logos__img{
+        width: 100px;
+        height: 110px;
+    }
+}
 
