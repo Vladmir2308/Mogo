@@ -69,6 +69,16 @@ hr{
 
 }
 
+.header.fixed{
+    position: fixed;
+    
+    background-color: #f38181;
+}
+
+.header.fixed .header__inner{
+    
+}
+
 .header__inner{
     display: flex;
     justify-content: space-between;
