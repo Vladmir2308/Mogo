@@ -76,7 +76,7 @@ hr{
 }
 
 .header.fixed .header__inner{
-
+    padding: 20px 15px;
 }
 
 .header__inner{
@@ -92,6 +92,8 @@ hr{
 .header__logo{
     font-size: 2rem;
     font-family: "M_B";
+    
+    cursor: pointer;
 }
 
 /* Nav */
@@ -104,8 +106,10 @@ hr{
     display: block;
 
     position: absolute;
-    top: 60px;
+    top: 54px;
     right: 0;
+    
+    border-radius: 0 0 10px 10px;
 
     background-color: #f38181;
 }
@@ -124,6 +128,35 @@ hr{
     bottom: 0;
 }
 
+.nav__toggle-area{
+    width: 30px;
+    height: 24px;
+    
+    position: relative;
+    
+    cursor: pointer;
+    
+    display: none;
+}
+
+.nav__toggle-area.active .nav__toggle{
+    background: none;
+}
+
+.nav__toggle-area.active .nav__toggle::before{
+    transform-origin: left top;
+    transform: rotate(45deg);
+    
+    left: 4px;
+}
+
+.nav__toggle-area.active .nav__toggle::after{
+    transform-origin: top left;
+    transform: rotate(-45deg) translate(-3px);
+    
+    left: 4px;  
+}
+
 .nav__toggle{
     display: none;
 
@@ -132,12 +165,11 @@ hr{
     width: 30px;
     height: 3px;
 
-    position: relative;
+    position: absolute;
+    top: 50%;
 
     margin: auto 0;
-
-    cursor: pointer;
-
+    
     border: 0;
 }
 
@@ -150,8 +182,10 @@ hr{
     height: 3px;
 
     position: absolute;
-    top: -8px;
+    top: -9px;
     left: 0;
+    
+    transition: transform .2s linear;
 }
 
 .nav__toggle::after{
@@ -163,8 +197,10 @@ hr{
     height: 3px;
 
     position: absolute;
-    bottom: -8px;
+    bottom: -9px;
     left: 0;
+    
+    transition: transform .2s linear;
 }
 
 .nav__link{
@@ -592,6 +628,10 @@ hr{
     left: 0;
 }
 
+.whatwedo__item.active .whatwedo__item__text{ 
+    display: block;
+}
+
 .whatwedo__item:last-child{
     margin-bottom: 0;
 }
@@ -621,6 +661,8 @@ hr{
 }
 
 .whatwedo__item__text{
+    display: none;
+    
     color: #999999;
 
     padding-right: 40px;
@@ -1790,12 +1832,21 @@ hr{
 } /* media 810px */
 
 @media (max-width: 760px){
+/*    Header */
+    .header__inner{
+         padding: 15px 15px;    
+    }
+    
 /*    Nav */
     .nav{
         display: none;
     }
-
+    
     .nav__toggle{
+        display: block;
+    }
+    
+    .nav__toggle-area{
         display: block;
     }
 
@@ -1962,4 +2013,18 @@ hr{
         height: 110px;
     }
 }
+
+@media (max-height: 800px){
+    .intro{
+        height: 800px;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
 
